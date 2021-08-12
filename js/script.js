@@ -42,7 +42,7 @@ function getValueKits(paramsKits) {
             
         }
 
-        ValorPeso.innerHTML = `${pesos[paramsKits]} Kg`
+        ValorPeso.innerHTML = `Kg ${pesos[paramsKits]}`
         MedidaLargura.innerHTML = medidasLargura[paramsKits]
         MedidaComprimento.innerHTML = medidasComprimento[paramsKits]
         MedidaAltura.innerHTML = medidasAltura[paramsKits]

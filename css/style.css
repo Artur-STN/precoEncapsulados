@@ -3,7 +3,7 @@
 * {
 
     font-family: 'Roboto';
-    
+
     margin: 0;
     padding: 0;
 
@@ -24,7 +24,7 @@
     font-size: 3rem;
 
     text-align: center;
-    
+
     margin-bottom: 3rem;
 
 }
@@ -41,12 +41,14 @@ body {
 
     min-height: 100vh;
 
+    padding: 4rem 0;
+
 }
 
 span {
 
     background: white;
-    
+
     width: 100vw;
     height: 2px;
 
@@ -74,9 +76,9 @@ section {
 
 .firstSection .divisoriaCapsulas,
 .firstSection .divisoriaKits {
-    
+
     border: 1px solid;
-    
+
     padding: 2rem;
 
 }
@@ -115,7 +117,7 @@ section {
 
     background: #01BAEF;
     color: white;
-    
+
     font-size: 2.5rem;
     font-weight: bolder;
 
@@ -124,14 +126,14 @@ section {
 
     border: 0;
     border-radius: 15px;
-    
-    width:80px;
-    height:80px;
+
+    width: 80px;
+    height: 80px;
 
     cursor: pointer;
 
     transition: all 0.2s;
-    
+
 }
 
 .firstSection .divisoriaCapsulas .buttons button {
@@ -190,9 +192,9 @@ section {
 .secondSection .divisoriaPeso {
 
     border: 1px solid;
-    
+
     width: 390px;
-    
+
     padding: 2rem;
 
 }
@@ -225,9 +227,9 @@ section {
     font-weight: bolder;
 
     border: 1px solid;
-    
+
     text-align: center;
-    
+
     padding: 1rem;
 
 }
@@ -241,7 +243,7 @@ section {
 }
 
 .secondSection .divisoriaMedidas .divisoriaInputs p {
-    
+
     font-weight: bolder;
     font-size: 3rem;
 
@@ -250,7 +252,167 @@ section {
     text-align: center;
 
     width: 90px;
-    
+
     padding: 1rem;
 
 }
+
+.secondSection .divisoriaPreco .resultadoPreco p,
+.secondSection .divisoriaPeso .resultadoPeso p,
+.secondSection .divisoriaMedidas .divisoriaInputs p {
+
+    border-radius: 15px;
+
+}
+
+@media(max-width: 1300px) {
+
+    span {
+
+        width: 90%;
+
+    }
+
+    .firstSection .divisoriaCapsulas {
+
+        padding: 6.5rem 2rem;
+
+    }
+
+    .firstSection .divisoriaKits .buttons {
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+
+    .firstSection .divisoriaKits .buttons button {
+
+        margin: 1rem 1rem;
+
+    }
+
+    .firstSection .divisoriaKits .buttons button:first-child {
+
+        margin-left: 1rem;
+
+    }
+
+    .secondSection {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+        grid-template-areas: "preço peso"
+            "medida medida";
+
+    }
+
+    .secondSection .divisoriaPreco {
+
+        grid-area: preço;
+
+    }
+
+    .secondSection .divisoriaPeso {
+
+        grid-area: peso;
+
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+
+    }
+
+    .secondSection .divisoriaMedidas {
+
+        grid-area: medida;
+
+        border-radius: 15px;
+
+        width: 100%;
+
+    }
+
+}
+
+@media(max-width: 950px) {
+
+    .firstSection {
+
+        flex-direction: column;
+
+    }
+
+    .firstSection .divisoriaCapsulas,
+    .firstSection .divisoriaKits,
+    .secondSection .divisoriaPreco,
+    .secondSection .divisoriaPeso,
+    .secondSection .divisoriaMedidas {
+
+        border-radius: 15px;
+
+        width: 514px;
+
+        margin-bottom: 2rem;
+
+    }
+
+    .firstSection .divisoriaKits,
+    .secondSection .divisoriaMedidas {
+
+        margin-bottom: 0;
+
+    }
+
+    .secondSection {
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        flex-direction: column;
+
+    }
+
+}
+
+@media(max-width: 550px) {
+
+    .firstSection .divisoriaCapsulas,
+    .firstSection .divisoriaKits {
+
+        width: 400px;
+
+        padding: 2rem;
+
+    }
+
+    .firstSection .divisoriaKits .buttons {
+
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    .secondSection .divisoriaPreco,
+    .secondSection .divisoriaPeso,
+    .secondSection .divisoriaMedidas {
+
+        width: 350px;
+        
+        padding: 1rem;
+
+    }
+
+    .secondSection .divisoriaPreco .titulo h1,
+    .secondSection .divisoriaPeso .titulo h1,
+    .secondSection .divisoriaMedidas .titulo h1,
+    .secondSection .divisoriaPreco .resultadoPreco p,
+    .secondSection .divisoriaPeso .resultadoPeso p,
+    .secondSection .divisoriaMedidas .divisoriaInputs p {
+
+        font-size: 1.8rem;
+
+    }
+
+} 
