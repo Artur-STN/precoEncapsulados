@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Preços Encapsulados</title>
+
+    <!-- LINK FAVICON -->
+    <link rel="shortcut icon" href="imagem/favicon.png" type="image/x-icon">
+    
+    <!-- LINKS CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- LINK JAVASCRIPT -->
+    <script src="js/script.js"></script>
+
+</head>
+
+<body>
+
+    <section class="firstSection">
+
+        <div class="divisoriaCapsulas">
+
+            <div class="titulo">
+
+                <h1>CAPSULAS</h1>
+
+            </div>
+
+            <div class="buttons">
+
+                <button id="buttonCap_30" onclick="getValueCapsulas('30')">30</button>
+                
+                <button id="buttonCap_60" onclick="getValueCapsulas('60')">60</button>
+                
+                <button id="buttonCap_120" onclick="getValueCapsulas('120')">120</button>
+                
+            </div>
+
+        </div>
+
+        <div class="divisoriaKits">
+
+            <div class="titulo">
+                
+                <h1>KITS</h1>
+
+            </div>
+
+            <div class="buttons">
+
+                <button onclick="getValueKits('0')">1</button>
+                <button onclick="getValueKits('1')">2</button>
+                <button onclick="getValueKits('2')">3</button>
+                <button onclick="getValueKits('3')">5</button>
+                <button onclick="getValueKits('4')">8</button>
+                <button onclick="getValueKits('5')">10</button>
+                <button onclick="getValueKits('6')">15</button>
+                <button onclick="getValueKits('7')">20</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <span></span>
+
+    <section class="secondSection">
+
+        <div class="divisoriaPreco">
+
+            <div class="titulo">
+                
+                <h1>PREÇO</h1>
+
+            </div>
+
+            <div class="resultadoPreco">
+                
+                <p id="ValorPreco">R$ 0.00</p>
+
+            </div>
+
+        </div>
+
+        <div class="divisoriaPeso">
+
+            <div class="titulo">
+                
+                <h1>PESO</h1>
+
+            </div>
+
+            <div class="resultadoPeso">
+                
+                <p id="ValorPeso">0 Kg</p>
+
+            </div>
+
+        </div>
+
+        <div class="divisoriaMedidas">
+
+            <div class="titulo">
+                
+                <h1>MEDIDAS</h1>
+
+            </div>
+
+            <div class="divisoriaInputs">
+
+                <p id="MedidaLargura">00</p>
+
+                <p id="MedidaComprimento">00</p>
+
+                <p id="MedidaAltura">00</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>

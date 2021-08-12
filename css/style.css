@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+* {
+
+    font-family: 'Roboto';
+    
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    outline: none;
+
+    transition: all 0.2s;
+
+}
+
+.titulo h1 {
+
+    color: #383F51;
+
+    text-shadow: 0 0 2px white;
+
+    font-size: 3rem;
+
+    text-align: center;
+    
+    margin-bottom: 3rem;
+
+}
+
+body {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    background: #3C4F76;
+
+    min-height: 100vh;
+
+}
+
+span {
+
+    background: white;
+    
+    width: 100vw;
+    height: 2px;
+
+    margin: 2rem 0;
+
+}
+
+section {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.firstSection .divisoriaCapsulas,
+.firstSection .divisoriaKits,
+.secondSection .divisoriaPreco,
+.secondSection .divisoriaMedidas,
+.secondSection .divisoriaPeso {
+
+    background: #DDDBF1;
+
+}
+
+.firstSection .divisoriaCapsulas,
+.firstSection .divisoriaKits {
+    
+    border: 1px solid;
+    
+    padding: 2rem;
+
+}
+
+.firstSection .divisoriaCapsulas {
+
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+
+}
+
+.firstSection .divisoriaKits {
+
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+
+}
+
+.firstSection .divisoriaCapsulas {
+
+    border-right: 0;
+
+}
+
+.firstSection .divisoriaCapsulas .buttons,
+.firstSection .divisoriaKits .buttons {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.firstSection .divisoriaCapsulas .buttons button,
+.firstSection .divisoriaKits .buttons button {
+
+    background: #01BAEF;
+    color: white;
+    
+    font-size: 2.5rem;
+    font-weight: bolder;
+
+    text-shadow: 0 0 2px black;
+    box-shadow: 0 0 2px black;
+
+    border: 0;
+    border-radius: 15px;
+    
+    width:80px;
+    height:80px;
+
+    cursor: pointer;
+
+    transition: all 0.2s;
+    
+}
+
+.firstSection .divisoriaCapsulas .buttons button {
+
+    margin-left: 1rem;
+
+}
+
+.firstSection .divisoriaCapsulas .buttons button:first-child {
+
+    margin-left: 0;
+
+}
+
+.firstSection .divisoriaCapsulas .buttons button:hover,
+.firstSection .divisoriaKits .buttons button:hover {
+
+    background: white;
+    color: #0B4F6C;
+
+    text-shadow: inset 0 0 10px black;
+    box-shadow: 0 0 10px black;
+
+}
+
+.firstSection .divisoriaCapsulas .buttons button:focus,
+.firstSection .divisoriaKits .buttons button:focus {
+
+    background: #542344;
+    color: white;
+
+}
+
+.firstSection .divisoriaCapsulas .buttons button:focus:hover,
+.firstSection .divisoriaKits .buttons button:focus:hover {
+
+    background: white;
+    color: #542344;
+
+}
+
+.firstSection .divisoriaKits .buttons button {
+
+    margin-left: 1rem;
+
+}
+
+.firstSection .divisoriaKits .buttons button:first-child {
+
+    margin-left: 0;
+
+}
+
+.secondSection .divisoriaPreco,
+.secondSection .divisoriaMedidas,
+.secondSection .divisoriaPeso {
+
+    border: 1px solid;
+    
+    width: 390px;
+    
+    padding: 2rem;
+
+}
+
+.secondSection .divisoriaPreco,
+.secondSection .divisoriaPeso {
+
+    border-right: 0;
+
+}
+
+.secondSection .divisoriaPreco {
+
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+
+}
+
+.secondSection .divisoriaMedidas {
+
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+
+}
+
+.secondSection .divisoriaPreco .resultadoPreco P,
+.secondSection .divisoriaPeso .resultadoPeso P {
+
+    font-size: 3rem;
+    font-weight: bolder;
+
+    border: 1px solid;
+    
+    text-align: center;
+    
+    padding: 1rem;
+
+}
+
+.secondSection .divisoriaMedidas .divisoriaInputs {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.secondSection .divisoriaMedidas .divisoriaInputs p {
+    
+    font-weight: bolder;
+    font-size: 3rem;
+
+    border: 1px solid;
+
+    text-align: center;
+
+    width: 90px;
+    
+    padding: 1rem;
+
+}
