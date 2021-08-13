@@ -352,7 +352,7 @@ section {
 
         border-radius: 15px;
 
-        width: 514px;
+        width: 450px;
 
         margin-bottom: 2rem;
 
@@ -379,10 +379,31 @@ section {
 
 @media(max-width: 550px) {
 
+    .firstSection .divisoriaCapsulas .buttons button {
+
+        height: 65px;
+
+    }
+
+    .firstSection .divisoriaKits .buttons button {
+
+        width: 65px;
+        height: 65px;
+
+    }
+
+    .firstSection .divisoriaKits .buttons button:focus {
+    
+        position: fixed;
+        top: 24px;
+        left: 70px;
+
+    }
+
     .firstSection .divisoriaCapsulas,
     .firstSection .divisoriaKits {
 
-        width: 400px;
+        width: 350px;
 
         padding: 2rem;
 
