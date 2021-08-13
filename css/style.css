@@ -392,14 +392,6 @@ section {
 
     }
 
-    .firstSection .divisoriaKits .buttons button:focus {
-    
-        position: fixed;
-        top: 24px;
-        left: 70px;
-
-    }
-
     .firstSection .divisoriaCapsulas,
     .firstSection .divisoriaKits {
 
