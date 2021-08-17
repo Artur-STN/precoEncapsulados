@@ -12,6 +12,10 @@ function getValueCapsulas(paramsCapsulas) {
 
     capsula = paramsCapsulas
 
+    let buttonCapsulas = document.getElementById(`buttonCapsulas_${paramsCapsulas}`)
+
+    buttonCapsulas.style.background = "#e63946"
+
 }
 
 function getValueKits(paramsKits) {
@@ -21,6 +25,10 @@ function getValueKits(paramsKits) {
     let MedidaLargura = document.getElementById('MedidaLargura')
     let MedidaComprimento = document.getElementById('MedidaComprimento')
     let MedidaAltura = document.getElementById('MedidaAltura')
+
+    let buttonKit = document.getElementById(`buttonKit_${paramsKits}`)
+
+    buttonKit.style.background = "#e63946"
 
     if (capsula == 0) {
 

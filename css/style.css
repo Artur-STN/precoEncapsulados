@@ -159,22 +159,6 @@ section {
 
 }
 
-.firstSection .divisoriaCapsulas .buttons button:focus,
-.firstSection .divisoriaKits .buttons button:focus {
-
-    background: #542344;
-    color: white;
-
-}
-
-.firstSection .divisoriaCapsulas .buttons button:focus:hover,
-.firstSection .divisoriaKits .buttons button:focus:hover {
-
-    background: white;
-    color: #542344;
-
-}
-
 .firstSection .divisoriaKits .buttons button {
 
     margin-left: 1rem;
@@ -428,4 +412,4 @@ section {
 
     }
 
-} 
+}
