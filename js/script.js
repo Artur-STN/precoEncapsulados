@@ -15,6 +15,7 @@ function getValueCapsulas(paramsCapsulas) {
     let buttonCapsulas = document.getElementById(`buttonCapsulas_${paramsCapsulas}`)
 
     buttonCapsulas.style.background = "#e63946"
+    buttonCapsulas.style.color = "white"
 
 }
 
@@ -29,6 +30,7 @@ function getValueKits(paramsKits) {
     let buttonKit = document.getElementById(`buttonKit_${paramsKits}`)
 
     buttonKit.style.background = "#e63946"
+    buttonKit.style.color = "white"
 
     if (capsula == 0) {
 
