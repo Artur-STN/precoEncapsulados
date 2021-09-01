@@ -328,6 +328,12 @@ section {
 
     }
 
+    .firstSection .divisoriaKits .buttons {
+
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
     .firstSection .divisoriaCapsulas,
     .firstSection .divisoriaKits,
     .secondSection .divisoriaPreco,
@@ -382,12 +388,6 @@ section {
         width: 350px;
 
         padding: 2rem;
-
-    }
-
-    .firstSection .divisoriaKits .buttons {
-
-        grid-template-columns: repeat(3, 1fr);
 
     }
 
