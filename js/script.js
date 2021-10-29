@@ -31,8 +31,7 @@ function getValueKits(paramsKits) {
 
     let buttonKit = document.getElementById(`buttonKit_${paramsKits}`)
 
-    buttonKit.style.background = "#e63946"
-    buttonKit.style.color = "white"
+    
 
     if (capsula == 0) {
 
@@ -60,5 +59,8 @@ function getValueKits(paramsKits) {
         MedidaAltura.innerHTML = medidasAltura[paramsKits]
 
     }
+    
+    buttonKit.style.background = "#e63946"
+    buttonKit.style.color = "white"
 
 }
